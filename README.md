@@ -1,4 +1,4 @@
 # petitecorepoc
 
-![ Alt text](showcase. gif) / ! [](showcase. gif)
+![](showcase.gif)
 
