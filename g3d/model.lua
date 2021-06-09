@@ -53,6 +53,11 @@ local function newModel(verts, texture, translation, rotation, scale)
     -- initialize my variables
     self.verts = verts
     self.texture = texture
+    
+    --patch for the pico cad look
+    self.texture:setFilter("nearest","nearest")
+    --end of tl patch
+    
     self.mesh = love.graphics.newMesh(self.vertexFormat, self.verts, "triangles")
     self.mesh:setTexture(self.texture)
     self.matrix = newMatrix()

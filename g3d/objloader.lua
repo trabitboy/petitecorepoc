@@ -56,7 +56,7 @@ local function objLoader(path)
         -- if the first word in this line is a "vt", then this defines a texture coordinate
         if words[1] == "vt" then
             print('uv')
-            uvs[#uvs+1] = {tonumber(words[2]), tonumber(words[3])}
+            uvs[#uvs+1] = {tonumber(words[2]), 1-tonumber(words[3])}
         end
 
         -- if the first word in this line is a "vn", then this defines a vertex normal
