@@ -1,1 +1,4 @@
 # petitecorepoc
+
+![](showcase.gif)
+
